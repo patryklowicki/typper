@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block body %}
+{{ game.id }} {{ game.home_team }} vs {{ game.away_team }} <br>
+<form method="post" class="form_inline">
+        <input type="hidden" value="{{game.id}}" name="game_id"> {% csrf_token %}
+        {{ form }} <button type="submit" class="btn btn" value="bet"> send </button> </form> <br>
+{% endblock %}

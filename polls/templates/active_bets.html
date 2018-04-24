@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+
+time now: {{ timenow }}
+
+{% now "jS F Y H:i" %}
+
+<table class="table">
+    <tr>
+        <th>Game<th>user id</th> <th>Bet</th> <th>date</th><th>result</th>
+{% for game in bets_join_games %}
+    </tr>
+        <td>{{ game.game.home_team }} vs {{ game.game.away_team }}</td> <td>{{game.user_id}}</td> <td>{{ game.home_goals }} : {{ game.away_goals }}</td> <td> {{ game.game.date }} </td><td>{{ game.game.home_goals }} : {{ game.game.away_goals }}</td>
+{% endfor %}
+</table>
+
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<br>
+
+<p>
+<a class="btn btn-info btn-lg" href="/polls/create_league">Create League <span class="glyphicon glyphicon-arrow-right"></span></a>
+<a class="btn btn-info" href="/polls/join_league">Join League <span class="glyphicon glyphicon-arrow-right"></span></a>
+</p>
+Your Leagues: <br>
+
+{% for league in users_leagues %}
+<a href="/polls/leagues/standings/{{league.id}}">{{ league.name }} </a><br>
+{% endfor %}
+
+{% endblock %}
+
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>

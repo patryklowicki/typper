@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/signin.css">
+  </head>
+
+
+{% load crispy_forms_tags %}
+<style>
+    body {
+
+    background-image: url('/static/images/pitch-dark.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: red;
+}
+
+
+.red .active a,
+.red .active a:hover {
+    background-color: red;
+}
+
+</style>
+
+
+
+<div class="container vertical-center">
+
+        <div class="card-deck">
+            <div class="card w-90" style="background: rgba(0, 0, 0, 0); color: white;" >
+                <div class ="card-header">  <h1>typper</h1> </div>
+                <div class="card-body">
+                <div class="card-text">typper is an online football score prediction game. You can create leagues to play and compete with your friends. </div>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+
+
+            <div class="card w-90"  style="background: rgba(0, 0, 0, 0.35); color: white;">
+                <div class="card-header">
+                <ul class="nav nav-pills nav-fill card-header-pills red">
+                    <li class="nav-item"> <a class="nav-link active" href="#login" data-toggle="tab">     <h2>Sign in</h2></a> </li>
+                    <li class="nav-item"> <a class=nav-link href="#register" data-toggle="tab"><h2>Sign up </h2></a> </li>
+                </ul>
+                    </div>
+
+                     <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane active in" id="login">
+                                <div class="card-body">
+                                    <form method="post" class="form-horizontal" role="form"> {% csrf_token %}
+                                        {{ form|crispy }}
+                                    <div class="card-footer"><button type="submit" class="btn btn-lg btn-success btn-block"> Sign in </button></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="register">
+                                <div class="card-body">
+                                <form id="tab">
+                                    <input type="text" value="" class="input-xlarge" placeholder="username"> <br>
+                                    <label>First Name</label>
+                                    <input type="text" value="" class="input-xlarge"> <br>
+                                    <label>Last Name</label>
+                                    <input type="text" value="" class="input-xlarge"><br>
+                                    <label>Email</label>
+                                    <input type="text" value="" class="input-xlarge"><br>
+                                    <label>Address</label>
+
+                                    <div>
+                                        <button class="btn btn-primary">Create Account</button>
+                                    </div>
+                                </form>
+                            </div>
+                     </div>
+                </div>
+        </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="tcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Terms and Conditions</h4>
+        </div>
+        <div class="modal-body">
+          Blah blah. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+          Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+          dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+          Aliquam in felis sit amet augue.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+<!--
+<div class="container">
+
+  <form method="post" class="form-signin">
+      <h2 class="form-signin-heading">Please sign in</h2>
+      {% csrf_token %}
+        {{ form|crispy }}
+    <button type="submit" class="btn btn-lg btn-primary btn-block"> Sign in </button>
+  </form>
+</div> -->
+        </div>
+</div>
+</html>

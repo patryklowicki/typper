@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% if messages %}
+<ul class="alert alert-danger">
+    {% for message in messages %}
+                {{ message }}
+    {% endfor %}
+</ul>
+{% endif %}
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            {% for game in all_games %}
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-header">
+                            <h4 class="card-title">  <span class="badge badge-secondary"> {{ game.home_team }} </span> vs <span class="badge badge-secondary"> {{ game.away_team }}  </span> </h4>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-subtitle"> {{game.date}} </h6>
+
+                                <form method="post" class="form_inline">
+                                    <input type="hidden" value="{{game.id}}" name="game_id"> {% csrf_token %}
+                                    <div class="form-row">
+                                        <div class="col">
+                                            {{ form }}
+                                            <button type="submit" class="btn btn" value="bet"> Bet </button>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+
+
+            <br>
+
+                {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form method="POST"> {% csrf_token %}
+
+    {{ form }} <button type="submit" class="btn btn" value="code"> join </button>
+</form>
+
+
+result {{ result }}
+
+
+{% if messages %}
+<ul class="alert alert-success">
+    {% for message in messages %}
+                {{ message }}. Go back to <a href="/polls/">home page</a>.
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

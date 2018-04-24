@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+{% if messages %}
+<ul class="alert alert-success">
+    {% for message in messages %}
+                {{ message }}. Go back to <a href="/polls/">home page</a>.
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+<form method="POST"> {% csrf_token %}
+
+    {{ form }} <button type="submit" class="btn btn" value="bet"> create </button>
+</form>
+{% endblock %}

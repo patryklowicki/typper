@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="container vertical-center">
+        <table class="table" border="1    ">
+            <tr>
+                <th>Username</th> <th>points</th>
+            </tr>
+        {% for x in userpoints %}
+            <tr>
+                <td><a href="/polls/user/{{x.user__username}}">{{x.user__username}}</a></td> <td> {{ x.user_points }} </td>
+            </tr>
+        {% endfor %}
+        </table>
+</div>
+
+
+{% endblock %}

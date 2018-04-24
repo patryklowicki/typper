@@ -1,0 +1,11 @@
+{{ game.home_team }} {{ game.home_goals }} vs {{ game.away_goals }} {{ game.away_team }} <br>
+logged in user - {{ user }} <br>
+users leagues: <br>
+{% for league in users_leagues %}
+<li>{{ league.name }} </li>
+{% endfor %} <br>
+
+members bets: <br>
+{% for bet in members_bets %}
+    {{ bet }}  <br>
+{% endfor %}
