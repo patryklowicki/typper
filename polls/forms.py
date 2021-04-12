@@ -5,11 +5,14 @@ from django.db import transaction
 
 
 class BetForm(forms.ModelForm):
+
     class Meta:
         model  = Bet
         fields = ['home_goals', 'away_goals']
         labels = { 'home_goals': '',
                    'away_goals': ''}
+        widgets = {'home_goals' : forms.TextInput(attrs={'size':'3'}),
+                   'away_goals' : forms.TextInput(attrs={'size':'3'})}
 
 
 class GameForm(forms.ModelForm):
