@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django-crispy-forms = "==1.7.0"
+django-twitter-bootstrap = "==3.3.0"
+pytz = "==2017.2"
+Django = "==2.0.2"
+django-registration-redux = "*"
+python-dotenv = "*"
+
+[requires]
+python_version = "3.8"

@@ -1,0 +1,7 @@
+-i https://pypi.org/simple
+django-crispy-forms==1.7.0
+django-registration-redux==2.9
+django-twitter-bootstrap==3.3.0
+django==2.0.2
+python-dotenv==0.15.0
+pytz==2017.2

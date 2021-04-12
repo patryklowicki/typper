@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>https://getbootstrap.com/docs/4.0/examples/signin/</title><link rel="stylesheet" type="text/css" href="signin_pliki/viewsource.css"></head><body id="viewsource" class="highlight" style="-moz-tab-size: 4" contextmenu="actions"><pre id="line1"><span></span><span class="doctype">&lt;!doctype html&gt;</span><span>
+<span id="line2"></span></span><span>&lt;<span class="start-tag">html</span> <span class="attribute-name">lang</span>="<a class="attribute-value">en</a>"&gt;</span><span>
+<span id="line3"></span>  </span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+<span id="line4"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>="<a class="attribute-value">utf-8</a>"&gt;</span><span>
+<span id="line5"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">viewport</a>" <span class="attribute-name">content</span>="<a class="attribute-value">width=device-width, initial-scale=1, shrink-to-fit=no</a>"&gt;</span><span>
+<span id="line6"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">description</a>" <span class="attribute-name">content</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line7"></span>    </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">name</span>="<a class="attribute-value">author</a>" <span class="attribute-name">content</span>="<a class="attribute-value"></a>"&gt;</span><span>
+<span id="line8"></span>    </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">rel</span>="<a class="attribute-value">icon</a>" <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://getbootstrap.com/favicon.ico">../../../../favicon.ico</a>"&gt;</span><span>
+<span id="line9"></span>
+<span id="line10"></span>    </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>Signin Template for Bootstrap</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+<span id="line11"></span>
+<span id="line12"></span>    </span><span class="comment">&lt;!-- Bootstrap core CSS --&gt;</span><span>
+<span id="line13"></span>    </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://getbootstrap.com/dist/css/bootstrap.min.css">../../../../dist/css/bootstrap.min.css</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>"&gt;</span><span>
+<span id="line14"></span>
+<span id="line15"></span>    </span><span class="comment">&lt;!-- Custom styles for this template --&gt;</span><span>
+<span id="line16"></span>    </span><span>&lt;<span class="start-tag">link</span> <span class="attribute-name">href</span>="<a class="attribute-value" href="view-source:https://getbootstrap.com/docs/4.0/examples/signin/signin.css">signin.css</a>" <span class="attribute-name">rel</span>="<a class="attribute-value">stylesheet</a>"&gt;</span><span>
+<span id="line17"></span>  </span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+<span id="line18"></span>
+<span id="line19"></span>  </span><span>&lt;<span class="start-tag">body</span>&gt;</span><span>
+<span id="line20"></span>
+<span id="line21"></span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">container</a>"&gt;</span><span>
+<span id="line22"></span>
+<span id="line23"></span>      </span><span>&lt;<span class="start-tag">form</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-signin</a>"&gt;</span><span>
+<span id="line24"></span>        </span><span>&lt;<span class="start-tag">h2</span> <span class="attribute-name">class</span>="<a class="attribute-value">form-signin-heading</a>"&gt;</span><span>Please sign in</span><span>&lt;/<span class="end-tag">h2</span>&gt;</span><span>
+<span id="line25"></span>        </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">inputEmail</a>" <span class="attribute-name">class</span>="<a class="attribute-value">sr-only</a>"&gt;</span><span>Email address</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line26"></span>        </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">email</a>" <span class="attribute-name">id</span>="<a class="attribute-value">inputEmail</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control</a>" <span class="attribute-name">placeholder</span>="<a class="attribute-value">Email address</a>" <span class="attribute-name">required</span> <span class="attribute-name">autofocus</span>&gt;</span><span>
+<span id="line27"></span>        </span><span>&lt;<span class="start-tag">label</span> <span class="attribute-name">for</span>="<a class="attribute-value">inputPassword</a>" <span class="attribute-name">class</span>="<a class="attribute-value">sr-only</a>"&gt;</span><span>Password</span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line28"></span>        </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">password</a>" <span class="attribute-name">id</span>="<a class="attribute-value">inputPassword</a>" <span class="attribute-name">class</span>="<a class="attribute-value">form-control</a>" <span class="attribute-name">placeholder</span>="<a class="attribute-value">Password</a>" <span class="attribute-name">required</span>&gt;</span><span>
+<span id="line29"></span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">checkbox</a>"&gt;</span><span>
+<span id="line30"></span>          </span><span>&lt;<span class="start-tag">label</span>&gt;</span><span>
+<span id="line31"></span>            </span><span>&lt;<span class="start-tag">input</span> <span class="attribute-name">type</span>="<a class="attribute-value">checkbox</a>" <span class="attribute-name">value</span>="<a class="attribute-value">remember-me</a>"&gt;</span><span> Remember me
+<span id="line32"></span>          </span><span>&lt;/<span class="end-tag">label</span>&gt;</span><span>
+<span id="line33"></span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+<span id="line34"></span>        </span><span>&lt;<span class="start-tag">button</span> <span class="attribute-name">class</span>="<a class="attribute-value">btn btn-lg btn-primary btn-block</a>" <span class="attribute-name">type</span>="<a class="attribute-value">submit</a>"&gt;</span><span>Sign in</span><span>&lt;/<span class="end-tag">button</span>&gt;</span><span>
+<span id="line35"></span>      </span><span>&lt;/<span class="end-tag">form</span>&gt;</span><span>
+<span id="line36"></span>
+<span id="line37"></span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span> </span><span class="comment">&lt;!-- /container --&gt;</span><span>
+<span id="line38"></span>  </span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
+<span id="line39"></span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span>
+<span id="line40"></span></span></pre><menu type="context" id="actions"><menuitem id="goToLine" label="Przejdź do wiersza…" accesskey="P"></menuitem><menuitem id="wrapLongLines" label="Zawijanie długich wierszy" type="checkbox"></menuitem><menuitem id="highlightSyntax" label="Podświetlanie składni" type="checkbox" checked="true"></menuitem></menu></body></html>

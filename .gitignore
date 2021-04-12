@@ -3,8 +3,9 @@
 __pycache__
 myvenv
 db.sqlite3
-/static
+/static/images
 .DS_Store
 .env
 mysite/.env
 /.idea/
+/.idea/workspace.xml

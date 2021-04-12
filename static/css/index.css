@@ -1,0 +1,38 @@
+td a {
+    display:block;
+    width:100%;
+}
+
+td.goodbet {
+    background: #5cb85c;
+    color: white;
+    text-align: center;
+
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.carousel-inner item {
+  margin: auto;
+}
+
+.my-button{
+   background: none !important;
+}
+
+div.jumbotron button:{
+background: none !important;
+}
+
+.carousel-inner{
+  left: 40%;
+  top: 10%
+}
+
+
+
+
