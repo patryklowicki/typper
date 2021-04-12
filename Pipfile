@@ -9,7 +9,7 @@ verify_ssl = true
 django-crispy-forms = "==1.7.0"
 django-twitter-bootstrap = "==3.3.0"
 pytz = "==2017.2"
-Django = "==2.0.2"
+Django = "==2.2.20"
 django-registration-redux = "*"
 python-dotenv = "*"
 
